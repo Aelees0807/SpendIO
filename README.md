@@ -40,11 +40,7 @@ A modern, full-stack web application for tracking personal expenses with powerfu
 - **Intuitive Navigation** with React Router
 - **Real-time Updates** without page refresh
 
-### 👤 User Profile
 
-- **Profile Management** to update personal information
-- **Transaction Overview** in user profile
-- **Account Statistics** at a glance
 
 ## 🚀 Tech Stack
 
@@ -201,9 +197,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👨‍💻 Author
 
@@ -212,12 +206,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - GitHub: [@Aelees0807](https://github.com/Aelees0807)
 - LinkedIn: [Connect with me on LinkedIn](https://linkedin.com/in/aelees-bhuva)
 
-## 🙏 Acknowledgments
 
-- Thanks to all contributors who helped build this project
-- Inspired by modern expense tracking applications
-- Built with ❤️ using React and Node.js
-
----
 
 ⭐ **Star this repository** if you find it helpful!
