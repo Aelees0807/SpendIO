@@ -19,7 +19,6 @@ A modern, full-stack web application for tracking personal expenses with powerfu
 ### 💳 Transaction Management
 
 - **Add, Edit & Delete Transactions** with ease
-- **Multiple Payment Methods** (Cash, Card, UPI, Net Banking)
 - **Transaction Filtering** by date range and payment method
 - **Detailed Transaction History** with sortable columns
 - **PDF Export** functionality for financial records
@@ -164,9 +163,8 @@ The app will run on `http://localhost:5173`
 
 <!-- Add screenshots of your application here -->
 
-```
-Coming Soon!
-```
+
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f4eb776d-b4fd-40a8-8bd5-a57469412cba" /> <img width="700" height="700" alt="localhost_5173_dashboard" src="https://github.com/user-attachments/assets/4e9ad5f9-b656-4758-9f7c-bfe5d3b9c435" />
 
 ## 🌟 Key Highlights
 
