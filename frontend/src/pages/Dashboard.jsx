@@ -7,6 +7,7 @@ import logo from '../assets/spendio-logo.png';
 import { Wallet, TrendingUp, TrendingDown, LogOut, Download, Trash2, Plus, PenSquare } from "lucide-react";
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import ThemeToggle from "../components/ThemeToggle";
+import API_URL from "../config/api";
 
 const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
@@ -24,7 +25,7 @@ const Dashboard = () => {
     try {
       if (!user) return;
       const userid = user._id;
-      const res = await axios.post("http://localhost:8080/api/transactions/get-transaction", { userid });
+      const res = await axios.post(`${API_URL}/transactions/get-transaction`, { userid });
       setTransactions(res.data);
     } catch (error) {
       console.log(error);
@@ -43,7 +44,7 @@ const Dashboard = () => {
     e.preventDefault();
     try {
       if (editMode) {
-        await axios.post("http://localhost:8080/api/transactions/edit-transaction", {
+        await axios.post(`${API_URL}/transactions/edit-transaction`, {
           payload: {
             ...formData,
             userid: user._id,
@@ -53,7 +54,7 @@ const Dashboard = () => {
         setEditMode(false);
         setEditableId(null);
       } else {
-        await axios.post("http://localhost:8080/api/transactions/add-transaction", {
+        await axios.post(`${API_URL}/transactions/add-transaction`, {
           ...formData,
           userid: user._id,
           reference: formData.title
@@ -85,7 +86,7 @@ const Dashboard = () => {
     
     if (confirmDelete) {
       try {
-         await axios.post("http://localhost:8080/api/transactions/delete-transaction", {transacationId: recordId});
+         await axios.post(`${API_URL}/transactions/delete-transaction`, {transacationId: recordId});
          getAllTransactions();
       } catch (error) {
           console.log(error);

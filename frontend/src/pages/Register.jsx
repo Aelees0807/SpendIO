@@ -4,6 +4,7 @@ import axios from "axios";
 import { Eye, EyeOff } from "lucide-react";
 import logo from '../assets/spendio-logo.png';
 import ThemeToggle from "../components/ThemeToggle";
+import API_URL from "../config/api";
 
 
 const Register = () => {
@@ -20,7 +21,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/api/users/register", values);
+      await axios.post(`${API_URL}/users/register`, values);
       alert("Registration Success! Please Login.");
       navigate("/login");
     } catch (error) {

@@ -4,6 +4,7 @@ import axios from "axios";
 import { Eye, EyeOff } from "lucide-react";
 import logo from '../assets/spendio-logo.png';
 import ThemeToggle from "../components/ThemeToggle";
+import API_URL from "../config/api";
 
 
 const Login = () => {
@@ -20,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8080/api/users/login", values);
+      const { data } = await axios.post(`${API_URL}/users/login`, values);
       localStorage.setItem("user", JSON.stringify({ ...data, password: "" }));
       navigate("/dashboard");
     } catch (error) {
