@@ -161,6 +161,10 @@ The app will run on `http://localhost:5173`
 
 <!-- Add screenshots of your application here -->
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0cd01c1983e45131aa2c76f915de41f77c8fea53
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f4eb776d-b4fd-40a8-8bd5-a57469412cba" /> <img width="700" height="700" alt="localhost_5173_dashboard" src="https://github.com/user-attachments/assets/4e9ad5f9-b656-4758-9f7c-bfe5d3b9c435" />
 
 ## 🌟 Key Highlights
