@@ -161,11 +161,10 @@ The app will run on `http://localhost:5173`
 
 <!-- Add screenshots of your application here -->
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
 
->>>>>>> 0cd01c1983e45131aa2c76f915de41f77c8fea53
-<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f4eb776d-b4fd-40a8-8bd5-a57469412cba" /> <img width="700" height="700" alt="localhost_5173_dashboard" src="https://github.com/user-attachments/assets/4e9ad5f9-b656-4758-9f7c-bfe5d3b9c435" />
+> > > > > > > 0cd01c1983e45131aa2c76f915de41f77c8fea53
+> > > > > > > <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f4eb776d-b4fd-40a8-8bd5-a57469412cba" /> <img width="700" height="700" alt="localhost_5173_dashboard" src="https://github.com/user-attachments/assets/4e9ad5f9-b656-4758-9f7c-bfe5d3b9c435" />
 
 ## 🌟 Key Highlights
 
@@ -175,6 +174,46 @@ The app will run on `http://localhost:5173`
 - ✅ **Data Export** - PDF generation for easy record-keeping
 - ✅ **Modern UI/UX** - Clean, intuitive, and user-friendly interface
 - ✅ **Fast Performance** - Optimized with Vite and React 19
+
+## 🚀 Deployment
+
+### Frontend (Vercel)
+
+1. **Install Vercel CLI** (optional):
+
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy via GitHub** (Recommended):
+   - Push your code to GitHub
+   - Go to [Vercel](https://vercel.com)
+   - Import your repository
+   - Vercel will auto-detect the `vercel.json` configuration
+   - Set environment variable: `VITE_API_URL` (your backend URL)
+   - Deploy!
+
+3. **Or deploy via CLI**:
+   ```bash
+   cd SpendIO
+   vercel
+   ```
+
+### Backend
+
+Your backend needs to be hosted separately. See [backend/DEPLOYMENT.md](backend/DEPLOYMENT.md) for detailed instructions.
+
+**Recommended platforms**:
+
+- **Render** (Free tier available)
+- **Railway** (Easy deployment)
+- **Heroku** (Paid)
+
+**Important**:
+
+- Set up MongoDB Atlas for cloud database
+- Configure environment variables (`MONGODB_URI`, `JWT_SECRET`, `PORT`)
+- Update frontend `VITE_API_URL` with your deployed backend URL
 
 ## 🔮 Future Enhancements
 
