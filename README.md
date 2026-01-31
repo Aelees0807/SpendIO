@@ -19,7 +19,6 @@ A modern, full-stack web application for tracking personal expenses with powerfu
 ### 💳 Transaction Management
 
 - **Add, Edit & Delete Transactions** with ease
-- **Multiple Payment Methods** (Cash, Card, UPI, Net Banking)
 - **Transaction Filtering** by date range and payment method
 - **Detailed Transaction History** with sortable columns
 - **PDF Export** functionality for financial records
@@ -39,12 +38,6 @@ A modern, full-stack web application for tracking personal expenses with powerfu
 - **Smooth Animations** and transitions
 - **Intuitive Navigation** with React Router
 - **Real-time Updates** without page refresh
-
-### 👤 User Profile
-
-- **Profile Management** to update personal information
-- **Transaction Overview** in user profile
-- **Account Statistics** at a glance
 
 ## 🚀 Tech Stack
 
@@ -88,9 +81,7 @@ SpendIO/
 │
 └── backend/                 # Node.js backend API
     ├── models/              # Mongoose models
-    ├── routes/              # API routes
-    ├── middleware/          # Custom middleware
-    ├── config/              # Configuration files
+    ├── server.js            # Main server entry point (Monolithic)
     └── package.json
 ```
 
@@ -152,8 +143,6 @@ Start the development server:
 npm run dev
 ```
 
-The app will run on `http://localhost:5173`
-
 ## 🎯 Usage
 
 1. **Register** a new account or **Login** with existing credentials
@@ -168,9 +157,7 @@ The app will run on `http://localhost:5173`
 
 <!-- Add screenshots of your application here -->
 
-```
-Coming Soon!
-```
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f4eb776d-b4fd-40a8-8bd5-a57469412cba" /> <img width="700" height="700" alt="localhost_5173_dashboard" src="https://github.com/user-attachments/assets/4e9ad5f9-b656-4758-9f7c-bfe5d3b9c435" />
 
 ## 🌟 Key Highlights
 
@@ -201,23 +188,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 👨‍💻 Author
 
 **Aelees Bhuva**
 
 - GitHub: [@Aelees0807](https://github.com/Aelees0807)
-- LinkedIn: [Connect with me on LinkedIn](https://linkedin.com/in/aelees-bhuva)
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who helped build this project
-- Inspired by modern expense tracking applications
-- Built with ❤️ using React and Node.js
-
----
+- LinkedIn: [Aelees Bhuva](https://linkedin.com/in/aelees-bhuva)
 
 ⭐ **Star this repository** if you find it helpful!
