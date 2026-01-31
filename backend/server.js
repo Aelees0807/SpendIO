@@ -6,12 +6,16 @@ const transactionModel = require("./models/transactionModel");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ["https://spend-io.vercel.app", "http://localhost:5173"],
+  credentials: true
+}));
 
 // 1. Database Connection
-mongoose.connect("mongodb://127.0.0.1:27017/expense_tracker_pro")
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/expense_tracker_pro";
+mongoose.connect(MONGODB_URI)
+  .then(() => console.log("MongoDB Connected to Atlas"))
+  .catch((err) => console.log("MongoDB Connection Error:", err));
 
 // 2. Auth Routes
 // Register
