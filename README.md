@@ -81,7 +81,9 @@ SpendIO/
 │
 └── backend/                 # Node.js backend API
     ├── models/              # Mongoose models
-    ├── server.js            # Main server entry point (Monolithic)
+    ├── routes/              # API routes
+    ├── middleware/          # Custom middleware
+    ├── config/              # Configuration files
     └── package.json
 ```
 
@@ -143,6 +145,8 @@ Start the development server:
 npm run dev
 ```
 
+The app will run on `http://localhost:5173`
+
 ## 🎯 Usage
 
 1. **Register** a new account or **Login** with existing credentials
@@ -188,11 +192,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 👨‍💻 Author
+## 👨‍💻 Create & Design By
 
 **Aelees Bhuva**
 
 - GitHub: [@Aelees0807](https://github.com/Aelees0807)
-- LinkedIn: [Aelees Bhuva](https://linkedin.com/in/aelees-bhuva)
+- LinkedIn: [Connect with me on LinkedIn](https://linkedin.com/in/aelees-bhuva)
 
 ⭐ **Star this repository** if you find it helpful!
